@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-scope" content="profile email" />
+    <meta
+      name="google-signin-client_id"
+      content="544721111005-g74i8l1ngl7414pur26ghrpv4d6injei.apps.googleusercontent.com"
+    />
+
+    <!-- Title -->
+    <title>User Registration Webpage</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lab-02.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Background Image -->
+      <img
+        src="images/lab-02.jpg"
+      />
+      <div class="content">
+        <div class="heading">
+          <h1><u>HACKATHON EVENT REGISTRATION</u></h1>
+          <br /><br />
+          <h2>2. Hackathon Details</h2>
+        </div>
+        <b>
+          <!-- Form -->
+          <form action="form.html" method="post">
+            <label for="before">HAVE YOU DONE A HACKATHON BEFORE? </label>
+            <br /><br />
+            <input type="radio" name="before" value="Yes" /> Yes
+            <input type="radio" name="before" value="No" /> No <br /><br />
+            <label for="motivation"
+              >WHY DO YOU WANNA TAKE PART IN THE HACKATHON?
+            </label>
+            <input type="textarea" rows="6" cols="100" name="motivation" />
+            <br /><br />
+            <label for="describe">WHAT DESCRIBES YOU BEST?:</label> <br /><br />
+            <input type="checkbox" name="describe" value="empathetic" />
+            Empathetic
+            <input type="checkbox" name="describe" value="reflective" />
+            Reflective
+            <input type="checkbox" name="describe" value="creative" /> Creative
+            <br />
+            <input type="checkbox" name="describe" value="observant" />
+            Observant
+            <input type="checkbox" name="describe" value="resilient" />
+            Resilient <br /><br />
+            <label for="linkedin">LINKEDIN PROFILE:</label>
+            <input type="text" name="linkedin" size="20" /> <br /><br />
+            <label for="hackerrank">HACKERRANK PROFILE: </label>
+            <input type="text" name="hackerrank" size="20" /> <br /><br />
+            <label for="codechef">CODECHEF PROFILE: </label>
+            <input type="text" name="codechef" size="20" /> <br /><br />
+            HOW DID YOU HEAR ABOUT THE HACKATHON?:
+            <select name="promotion">
+              <option>----- choose -----</option>
+              <option>School/ College</option>
+              <option>Social Media</option>
+              <option>Posters</option>
+              <option>Friends/ Teachers</option>
+            </select>
+            <br /><br /><br />
+            <input
+              type="submit"
+              value="SUBMIT"
+              style="background-color: aqua"
+            />
+            <input
+              type="reset"
+              value="RESET"
+              style="background-color: aquamarine"
+            /></form
+        ></b>
+      </div>
+    </div>
+  </body>
+</html>
