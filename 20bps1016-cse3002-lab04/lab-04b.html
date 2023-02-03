@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-scope" content="profile email" />
+    <meta
+      name="google-signin-client_id"
+      content="544721111005-g74i8l1ngl7414pur26ghrpv4d6injei.apps.googleusercontent.com"
+    />
+
+    <!-- Title -->
+    <title>Form 2</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lab-04b.css" />
+  </head>
+  <body>
+    <!-- Heading -->
+    <h2>Provide your information</h2>
+    <hr />
+    <!-- Form -->
+    <form>
+      <label for="name">Name <span id="ast">&ast;</span></label
+      ><input type="text" name="name" id="name" required autofocus />
+      <label for="email">Email <span id="ast">&ast;</span></label
+      ><input type="name" name="email" id="email" required />
+      <label for="tel">Telephone</label>
+      <div id="telephone">
+        <input
+          type="number"
+          name="tel"
+          id="tel"
+          maxlength="3"
+          required
+        />-<input
+          type="number"
+          name="tel"
+          id="tel"
+          maxlength="3"
+          required
+        />-<input type="number" name="tel" id="tel" maxlength="3" required />
+      </div>
+      <label for="reg">Regarding</label
+      ><select name="reg" id="reg">
+        <option value="general">General</option>
+        <option value="appointment">Appointment</option>
+        <option value="query">Query</option>
+      </select>
+      <label class="tx" for="message">Message <span id="ast">&ast;</span></label
+      ><textarea name="message" id="message" rows cols required></textarea
+      ><br /><br /><input type="submit" id="a" />
+    </form>
+  </body>
+</html>
