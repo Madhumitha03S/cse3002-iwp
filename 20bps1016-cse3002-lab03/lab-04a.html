@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-scope" content="profile email" />
+    <meta
+      name="google-signin-client_id"
+      content="544721111005-g74i8l1ngl7414pur26ghrpv4d6injei.apps.googleusercontent.com"
+    />
+
+    <!-- Title -->
+    <title>Form 1</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lab-04a.css" />
+  </head>
+  <body>
+    <form>
+      <!-- Subpart 1 -->
+      <fieldset>
+        <legend><center>Personal</center></legend>
+        <div class="section">
+          <label for="name">Name<span id="ast">&ast;</span></label
+          ><input type="text" name="name" id="name" required /><label
+            for="email"
+            >Email<span id="ast">&ast;</span></label
+          ><input type="name" name="email" id="email" required /><label
+            for="phone"
+            >Phone<span id="ast">&ast;</span></label
+          ><input type="text" name="phone" id="phone" required /><label
+            for="subject"
+            >Subject</label
+          ><select name="subject" id="subject">
+            <option value="appointment">Appointment</option>
+            <option value="query">Query</option>
+            <option value="general">General</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- Subpart 2 -->
+      <fieldset>
+        <legend><center>Message</center></legend>
+        <div class="section">
+          <label class="tx" for="message"
+            >Message<span id="ast">&ast;</span></label
+          ><textarea
+            name="message"
+            id="message"
+            rows="5"
+            cols="20"
+            required
+          ></textarea
+          ><br /><br /><input type="submit" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
