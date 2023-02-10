@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Array Input</title>
+  </head>
+  <body>
+    <form>
+      <h4>Enter the input values:</h4>
+      <input type="number" name="array[]" /><br /><br />
+      <input type="number" name="array[]" /><br /><br />
+      <input type="number" name="array[]" /><br /><br />
+      <input type="number" name="array[]" /><br /><br />
+      <input type="number" name="array[]" /><br /><br />
+      <p>FUNCTIONS:</p>
+      <button type="button" onclick="sum()">SUM</button>
+      <button type="button" onclick="multiply()">MULTIPLY</button>
+    </form>
+    <br />
+    <p id="sValue"></p>
+    <p id="mValue"></p>
+    <script type="text/javascript">
+      function sum() {
+        var input = document.getElementsByName("array[]");
+        var output = 0;
+        for (var i = 0; i < input.length; i++) {
+          output += parseInt(input[i].value) || 0;
+        }
+        document.getElementById("sValue").innerHTML = "Sum: " + output;
+      }
+      function multiply() {
+        var input = document.getElementsByName("array[]");
+        var output = 1;
+        for (var i = 0; i < input.length; i++) {
+          output *= parseInt(input[i].value) || 1;
+        }
+        document.getElementById("mValue").innerHTML = "Product: " + output;
+      }
+    </script>
+  </body>
+</html>
