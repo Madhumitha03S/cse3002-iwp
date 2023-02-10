@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <!-- Title -->
+    <title>Cost of Trip</title>
+    <!-- JS Script -->
+    <script>
+      function tripCost() {
+        var dist = document.forms["trip"]["km"].value;
+        var cpl = document.forms["trip"]["cost"].value;
+        var amt = document.forms["trip"]["con"].value;
+        var tCost = (dist / amt) * cpl;
+        var totalCost = tCost.toFixed();
+        document.writeln(
+          "<p>The total cost of travel for the trip is: " + totalCost + "</p>"
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Form for Trip Details -->
+    <form name="trip">
+      <label for="km">Number of Kilometers: </label>
+      <input
+        type="number"
+        name="km"
+        id="km"
+        maxlength="3"
+        required=""
+      /><br /><br />
+      <label for="cost">Cost of Petrol (per L): </label>
+      <input
+        type="number"
+        name="cost"
+        id="cost"
+        maxlength="2"
+        required=""
+      /><br /><br />
+      <label for="con">Petrol Consumption (kms per L): </label>
+      <input
+        type="number"
+        name="con"
+        id="con"
+        maxlength="2"
+        required=""
+      /><br /><br />
+      <input type="submit" value="SUBMIT" onclick="tripCost()" />
+    </form>
+    <div id="result"></div>
+  </body>
+</html>
