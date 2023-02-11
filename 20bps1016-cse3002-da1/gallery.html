@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Title -->
+    <title>VIT University</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/home.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+          <a id="navbar-brand" href="home.html">VIT UNIVERSITY</a>
+          <span id="toggle-nav" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+          </span>
+
+          <ul id="navlist">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="gallery-input">
+        <input type="radio" name="photos" id="check-1" checked />
+        <input type="radio" name="photos" id="check-2" />
+        <input type="radio" name="photos" id="check-3" />
+        <input type="radio" name="photos" id="check-4" />
+      </div>
+
+      <!--Container Class-->
+      <div class="container">
+        <h2 id="gallery-h2">Our Photo Gallery</h2>
+        <!-- Subtitles of the Categories -->
+        <div class="top-content">
+          <h3>Memory Lane!</h3>
+          <label for="check-1">All Photos</label>
+          <label for="check-2">Campus</label>
+          <label for="check-3">Activities</label>
+          <label for="check-4">Fests</label>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="photo-gallery">
+          <div class="pic campus">
+            <img src="images/gallery/campus-1.jpg" />
+          </div>
+          <div class="pic activity">
+            <img src="images/gallery/activity-1.jpg" />
+          </div>
+          <div class="pic fest">
+            <img src="images/gallery/fest-1.jpg" />
+          </div>
+          <div class="pic campus">
+            <img src="images/gallery/campus-2.jpg" />
+          </div>
+          <div class="pic activity">
+            <img src="images/gallery/activity-2.jpg" />
+          </div>
+          <div class="pic fest">
+            <img src="images/gallery/fest-2.jpg" />
+          </div>
+          <div class="pic campus">
+            <img src="images/gallery/campus-3.jpg" />
+          </div>
+          <div class="pic activity">
+            <img src="images/gallery/activity-3.jpg" />
+          </div>
+          <div class="pic fest">
+            <img src="images/gallery/fest-3.jpg" />
+          </div>
+          <div class="pic campus">
+            <img src="images/gallery/campus-4.jpg" />
+          </div>
+          <div class="pic activity">
+            <img src="images/gallery/activity-4.jpg" />
+          </div>
+          <div class="pic fest">
+            <img src="images/gallery/fest-4.jpg" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+      <div class="footer-content">
+        <a href="#" id="top">JUMP TO TOP</a>
+        <br /><br />
+        Copyright &copy; Madhumitha S 20BPS1016
+      </div>
+    </footer>
+  </body>
+</html>
