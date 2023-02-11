@@ -218,6 +218,23 @@ a:visited {
     text-transform: uppercase;
     color: #000020;    
 } 
+
+table, th, td {    
+    border: 1px dashed #000020;
+    border-spacing: 5px;
+    border-radius: 5px;            
+}
+
+th, td {
+    padding: 10px 40px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    color: #000020;
+    padding-bottom: 10px;
+}
 /***** CURRICULUM ENDS *****/
 
 /***** GALLERY STARTS *****/
