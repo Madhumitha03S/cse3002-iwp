@@ -1,0 +1,565 @@
+*,
+*::before,
+*::after {    
+    box-sizing: border-box;
+    font-family: robotics;
+}
+
+/** BODY **/
+body {
+    padding: 0;
+    margin: 0;   
+    background-color: #aaaaff;    
+}
+
+/** NAVIGATION BAR **/
+.navbar {
+    padding: 0;
+    margin: 0;    
+    position: relative;
+    overflow: hidden;    
+    height: 80px;
+    background: #00001a;
+}
+
+#navbar-brand {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    float: left;
+    color: #00ffff;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navlist {
+  list-style: none;
+  display: flex;    
+  padding: 5px;  
+}
+
+#navlist li {
+    flex: auto;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;        
+    text-transform: uppercase;    
+}
+
+#navlist li a:link, 
+a:visited, 
+a:active {   
+    color: #ffffff;     
+    text-decoration: none;
+}
+
+#navlist li:hover {
+    background: #808080;
+    color: #00001a;    
+}
+
+#navlist li a:hover {    
+    color: #00001a;
+}
+
+#navlist li a[href="#"] {
+    color: #ffffff;
+}
+
+/** CONTAINER **/
+.container {
+    padding: 0;
+    margin: 0; 
+    width: 100%;         
+}
+
+/***** HOME PAGE STARTS *****/
+.section-1 {    
+    padding: 5px;
+    margin: 0;
+    display: block;           
+    width: 100%;
+    background-image: url("images/home-img.jpg");   
+    background-repeat: no-repeat;       
+}
+
+#intro {
+    margin: 20px 120px;
+    padding: 20px 120px;
+    height: 465px;        
+}
+
+#intro h1 {
+    padding-bottom: 40px; 
+    font-size: 3em;           
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
+}
+
+#intro button {
+    width: 140px;
+    height: 40px;
+    padding: 2px;
+    margin: 0 10px;
+    border: 2px solid #00001a;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#project-btn {
+    background-color: #0088ff;  
+    color: #00001a;  
+    
+}
+
+#more-btn {    
+    background-color: #000020;
+    color: #7fffd4;
+    
+}
+
+#intro button a:link,
+a:hover, a:visited, a:active {    
+    text-decoration: none;    
+}
+
+.section-2 {
+    padding: 60px 0;
+    margin: 60px 0;
+    background-color:#caffff;
+    font-size: large;    
+    font-style: italic;
+}
+
+.intro-1 {
+    margin: 10px 40px;
+    padding: 10px 80px; 
+    font-size: larger;
+    text-align: center;
+}
+
+.section-3 {
+    padding: 60px 0;
+    margin: 60px 0;
+    background-color:#7fffd4;
+    font-size: large;    
+    font-style: italic;    
+}
+/***** HOME PAGE ENDS *****/
+
+/** FOOTER **/
+.footer-content {
+    padding: 0;
+    margin: 0;     
+    position:relative;
+    bottom: 0px;
+    background: #00001a;    
+    color: #ffffff;    
+    text-align: center;
+    width: 100%;
+    height: 100%;      
+}
+
+.footer-content a:link, 
+a:visited {    
+    text-decoration: none;
+}
+
+#top {    
+    padding-top: 20px;
+    color: #0088ff;
+    text-transform: uppercase;
+}
+
+#copy {
+    text-transform: uppercase;
+}
+
+/***** ABOUT US STARTS *****/
+.about-section {
+    padding: 20px 50px;
+    margin: 40px 80px;
+    background-color: #9aa2ff;
+    border: 2px ridge #0088ff;    
+    border-radius: 20px;
+}
+
+.about-section h2 {    
+    font-style: oblique; 
+    font-family: cursive;
+    text-transform: uppercase;
+    color: #000020;   
+}
+
+.about-section ul {
+    list-style-type: disc;
+}
+/***** ABOUT US ENDS *****/
+
+/***** CURRICULUM STARTS *****/
+.curriculum-section {
+    padding: 20px 50px;
+    margin: 40px 80px;
+    background-color: #9aa2ff;
+    border: 2px ridge #0088ff;    
+    border-radius: 20px;
+}
+
+.curriculum-section h2 {    
+    font-style: oblique; 
+    font-family: cursive;
+    text-transform: uppercase;
+    color: #000020;    
+} 
+/***** CURRICULUM ENDS *****/
+
+/***** GALLERY STARTS *****/
+.gallery-input input {
+    display: none;
+}
+
+#gallery-h2 {
+    font-weight: bold;  
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+    color: #4f4fff;
+}
+
+/** ANIMATION **/
+#gallery-h2::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #00001a;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 100px;
+    }
+    50% {
+        width: 600px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+/** CATEGORIES **/
+.top-content {
+    background-color: #caffff;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #7c7cff;
+    text-align: center;
+}
+
+.top-content h3 {
+    height: 100%;
+    background-color: #7fffd4;
+    line-height: 60px;
+    padding: 0 50px;
+    color: #0088ff;
+}
+
+.top-content label {
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 50px;
+    line-height: 60px;
+    text-transform: uppercase;    
+    color: #7c7cff;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.top-content label:hover {
+    color: #00001a;
+}
+
+/** PHOTO GRID **/
+.photo-gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.pic {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #7c7cff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pic img {
+    width: 100%;    
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+/** IMAGE TRANSITIONS **/
+.pic::before {
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.2s;
+    transition-delay: 0.1s;
+    z-index: 1;
+}
+
+.pic::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+    border-radius: 10px;
+    height: 0;    
+    background-color: #00001a;
+    width: 100%;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.pic:hover::after {
+    height: 100%;
+}
+
+.pic:hover::before {
+    margin-top: 0;    
+    opacity: 1;
+}
+
+/** IMAGES IN CATEGORIES **/
+#check-1:checked ~ .container .photo-gallery .pic {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check-2:checked ~ .container .photo-gallery .campus {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check-2:checked ~ .container .photo-gallery .activity, 
+#check-2:checked ~ .container .photo-gallery .fest {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check-3:checked ~ .container .photo-gallery .activity {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check-3:checked ~ .container .photo-gallery .campus, 
+#check-3:checked ~ .container .photo-gallery .fest {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check-4:checked ~ .container .photo-gallery .fest {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check-4:checked ~ .container .photo-gallery .campus, 
+#check-4:checked ~ .container .photo-gallery .activity {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+/***** GALLERY ENDS *****/
+
+/***** CONTACT US STARTS *****/
+.contact {
+    padding: 30px 10px;
+    margin: 20px;    
+}
+  
+.contact h3 {
+    font-size: 1em;
+    color: #000020;
+    margin: 2% 0 0 5%;
+    padding: 0;
+}
+
+/** MESSAGE BOX **/
+.message {
+    display: flex;    
+    width: 40%;
+    margin: 20px;
+}
+
+/** FORM **/
+.contact-form {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 150px 250px;
+}
+
+fieldset {
+    background-color:#7c7cff;
+    color:#000020;
+    border: 1px solid #000020;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+legend {
+    background-color: #00001a;
+    color:#7fffd4;
+    border: 1px solid #000020;    
+    border-radius: 5px;
+    height: 25px;
+}
+
+label {
+    font-size: 1em;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #000020;
+}
+
+input {
+    background-color:#aaffff;
+    border: 1px solid #000020;
+    box-shadow: 5px #000020 inset;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+textarea {
+    background-color: #aaffff;
+    border: 1px solid #000020;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #000020;
+    color: white;
+    margin: 0 5px 10px 25px;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/** SOCIAL MEDIA HANDLES **/
+.connect {
+    float: right;
+    width: 50%;
+    margin-left: 5%;
+    font-size: x-large;
+    font-variant: small-caps;
+    display: inline;
+}
+
+#connect-img {
+    width: 70%; 
+    height: 70%;
+    float: left;    
+    margin: 20px;
+    padding: 5px;
+}
+
+.connect li {
+    display:flex;
+    padding: 2px;
+    margin: 2px;
+}
+
+#social-handles img {
+    width: 50px;
+    height: 50px;
+    float: right;    
+}
+/***** CONTACT US ENDS *****/
+
+.email-phone {        
+    font-size: large;    
+    text-align: left;
+    color: #00001a; 
+    padding-left: 50px;       
+}
+
+.email-phone ul {
+    list-style-type: none;
+}
+
+#mail-phone-img {
+    width: 3%;
+    height: 3%;
+    padding-right: 20px;
+}
+
+.email-phone a:link, 
+a:hover, a:visited, 
+a:active {    
+    text-decoration: none;
+}
+
+.address {        
+    font-size:large;    
+    text-align: left;
+    color: #00001a; 
+    padding-left: 50px; 
+}
+
+/** MEDIA QUERIES **/
+@media all and ( max-width: 500px ) { 
+
+    .navbar {
+         padding: 1.6em;
+    }
+
+    #navlist {
+         flex-direction: column;
+         display: none;
+    }
+
+}
