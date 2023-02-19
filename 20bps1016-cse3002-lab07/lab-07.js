@@ -33,3 +33,10 @@ function changeNews() {
     var url = "https://example.com/ad.html" + "?size=" + size + "&color=" + color + "&topic=" + topic;
     document.getElementById("ad-iframe").src = url;
   }
+
+// designing the advertisement
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
