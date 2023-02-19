@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-scope" content="profile email" />
+    <meta
+      name="google-signin-client_id"
+      content="544721111005-g74i8l1ngl7414pur26ghrpv4d6injei.apps.googleusercontent.com"
+    />
+
+    <!-- Title -->
+    <title>E-NewsPaper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lab-07.css" />
+    <!-- JS -->
+    <script src="lab-07.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- NEWS -->
+      <div class="ads">
+        <div class="customise-ad">
+          <h2>Enter Ad Details:</h2>
+          <form id="ad-form">
+            <fieldset>
+              <legend>See the ads you want</legend>
+              <div section="ad-grid">
+                <label for="size">Size (in pixels): </label>
+                <input type="text" id="size" name="size" />
+                <label for="color">Color: </label>
+                <input type="text" id="color" name="color" />
+                <label for="topic">Topic: </label>
+                <input type="text" id="topic" name="topic" />
+              </div>
+              <button type="button" onclick="displayAd()">DISPLAY AD</button>
+            </fieldset>
+          </form>
+        </div>
+        <div id="ad-container">
+          <iframe id="ad-iframe">
+            <h2>YOUR ADVERTISEMENT WILL BE DISPLAYED HERE!</h2>
+          </iframe>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
