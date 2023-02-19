@@ -25,6 +25,9 @@ https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab05/lab-05b.html
 -> LAB 06: JAVASCRIPT VALIDATION USING REGULAR EXPRESSIONS <br/>
 https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab06/lab-06.html
 <br/><br/>
+-> LAB 07: HTML DOM AND JAVASCRIPT <br/>
+https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab07/lab-07.html
+<br/><br/>
 <br/><br/>
 ---> DIGITAL ASSIGNMENT 01: CREATE A WEBSITE FOR OUR UNIVERSITY <--
 <br/>
