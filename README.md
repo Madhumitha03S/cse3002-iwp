@@ -30,6 +30,8 @@ https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab07/lab-07.html
 <br/><br/>
 -> LAB 08: PHP Basics
 <br/><br/>
+-> LAB 09: PHP - MySQL
+<br/><br/>
 <br/><br/>
 ---> DIGITAL ASSIGNMENT 01: CREATE A WEBSITE FOR OUR UNIVERSITY <--
 <br/>
