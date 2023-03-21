@@ -32,6 +32,8 @@ https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab07/lab-07.html
 <br/><br/>
 -> LAB 09: PHP - MySQL
 <br/><br/>
+-> LAB 10: PHP Sessions and Cookies
+<br/><br/>
 <br/><br/>
 ---> DIGITAL ASSIGNMENT 01: CREATE A WEBSITE FOR OUR UNIVERSITY <--
 <br/>
