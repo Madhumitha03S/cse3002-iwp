@@ -1,0 +1,530 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/** BODY **/
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffebcd;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0 0;
+    margin: 0 0;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    z-index: 0;
+}
+
+h1 {
+    color: #200101;
+    font-size: medium;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h2 {
+    font-style: oblique;
+    font-family: cursive;
+    text-transform: uppercase;
+    color: #200101;
+}
+
+h3 {
+    color: #200101;
+    font-weight: bold;
+    font-size: larger;
+    font-style: oblique;
+}
+
+/** NAVIGATION BAR **/
+.navbar {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    background: #300000;
+}
+
+#navbar-brand {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    float: left;
+    color: #deb887;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navlist {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+#navlist li {
+    flex: auto;
+    text-align: center;
+    padding: 10px;
+    color: #ffebcd;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#navlist li a:link,
+a:visited,
+a:active {
+    color: #ffebcd;
+    text-decoration: none;
+}
+
+#navlist li:hover {
+    background: #ffbb55;
+    color: #300000;
+}
+
+#navlist li a:hover {
+    color: #300000;
+}
+
+#navlist li a[href="#"] {
+    color: #ffebcd;
+}
+
+/***** HOME PAGE STARTS *****/
+.home-container {
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-position: center center;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    /*background-image: url("images/home.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#home-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 0 0;
+    margin: 0 0;
+    background-position: center center;
+    z-index: 1;
+}
+
+#intro {
+    margin: 20px 120px;
+    padding: 20px 120px;
+    height: 465px;
+}
+
+#intro h1 {
+    padding-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    word-spacing: 0.01em;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+}
+
+#intro button {
+    width: 140px;
+    height: 40px;
+    padding: 2px;
+    margin: 0 10px;
+    border: 2px solid #200101;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#login-btn {
+    background-color: #006400;
+    color: #200101;
+}
+
+#signup-btn {
+    background-color: #ff4500;
+    color: #7fffd4;
+
+}
+
+#intro button a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #7fffd4;
+}
+
+/***** HOME PAGE ENDS *****/
+
+/** FOOTER **/
+.footer-content {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 0px;
+    background: #300000;
+    color: #ffebcd;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.map-phone {
+    padding: 40px 0;
+    color: #ffebcd;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.address {
+    font-size: large;
+    text-align: left;
+    color: #ffebcd;
+    margin-left: 40px;
+}
+
+.map {
+    height: 40%;
+    width: 100%;
+}
+
+#email-phone {
+    font-size: large;
+    text-align: left;
+    color: #ffebcd;
+    padding-left: 50px;
+}
+
+#email-phone ul {
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+#email-phone li {
+    padding-bottom: 10px;
+}
+
+#mail-phone-img {
+    width: 10%;
+    height: 10%;
+    margin-right: 10px;
+}
+
+#email-phone a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #ffebcd;
+}
+
+.footer-content a:link,
+a:visited {
+    text-decoration: none;
+}
+
+#top {
+    padding-top: 20px;
+    color: #32cd32;
+    text-transform: uppercase;
+}
+
+#copy {
+    text-transform: uppercase;
+    color: #ffebcd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/***** DEMO STARTS *****/
+.about-section {
+    padding: 20px 50px;
+    margin: 40px 80px;
+    background-color: #ff4500;
+    border: 2px ridge #200101;
+    border-radius: 20px;
+    color: #ffebcd;
+}
+
+.about-section h2 {
+    color: #9acd32;
+}
+
+.about-section hr {
+    border: 2px solid #200101;
+}
+
+.demo-section {
+    padding: 20px 50px;
+    margin: 40px 80px;
+    background-color: #ffbb55;
+    border: 2px ridge #200101;
+    border-radius: 20px;
+}
+
+.demo-section h2 {
+    color: #006400;
+}
+
+.demo-section hr {
+    border: 2px solid #200101;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+}
+
+.demo {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #300000;
+    border-radius: 5px;
+    background-color: #006400;
+    height: fit-content;
+}
+
+.demo h3 {
+    color: #ffbb55;
+}
+
+.demo hr {
+    border: 1px solid #200101;
+}
+
+.demo a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.demo img {
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    margin: 5px;
+}
+
+/***** DEMO ENDS *****/
+
+/***** COURSES STARTS *****/
+.courses-section {
+    padding: 20px 50px;
+    margin: 40px 80px;
+    background-color: #ffbb55;
+    border: 2px ridge #200101;
+    border-radius: 20px;
+}
+
+.courses-section h2 {
+    color: #006400;
+}
+
+.courses-section hr {
+    border: 2px solid #200101;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+}
+
+.courses {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #300000;
+    border-radius: 5px;
+    background-color: #006400;
+    height: fit-content;
+}
+
+.courses h3 {
+    color: #ffbb55;
+}
+
+.courses hr {
+    border: 1px solid #200101;
+}
+
+.courses a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.courses img {
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    margin: 5px;
+}
+
+.add-course a {
+    color: #ffebcd;
+}
+
+.add-items {
+    float: right;
+    display: block;
+}
+
+.add-course img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+table,
+th,
+td {
+    border: 1px ridge #200101;
+    border-spacing: 5px;
+    border-radius: 5px;
+}
+
+th,
+td {
+    padding: 10px 40px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    color: #300000;
+    padding-bottom: 10px;
+}
+
+/***** COURSES ENDS *****/
+
+/***** CART STARTS *****/
+
+/***** CART ENDS *****/
+
+/***** FAQ STARTS *****/
+.contact {
+    padding: 30px 10px;
+    background-color: #ff4500;
+}
+
+/** MESSAGE BOX **/
+.message {
+    display: flex;
+    width: 40%;
+    margin: 20px;
+}
+
+/** FORM **/
+.contact-form {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 150px 250px;
+}
+
+legend {
+    background-color: #f4a460;
+    color: #300000;
+    border: 1px solid #200101;
+    border-radius: 5px;
+    height: 100%;
+    padding: 4px;
+}
+
+fieldset {
+    background-color: #006400;
+    color: #200101;
+    border: 1px solid #200101;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+label {
+    font-size: 1em;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #200101;
+}
+
+input {
+    background-color: #ffbb55;
+    border: 1px solid #200101;
+    box-shadow: 5px #000020 inset;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+textarea {
+    background-color: #ffbb55;
+    border: 1px solid #200101;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #200101;
+    color: #ffebcd;
+    margin: 0 5px 10px 25px;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.connect {
+    float: right;
+    width: 50%;
+    margin-left: 5%;
+    display: inline;
+}
+
+#connect-img {
+    width: 70%;
+    height: 70%;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+/***** FAQ ENDS *****/
+
+
+/** MEDIA QUERIES **/
+@media all and (max-width: 500px) {
+
+    .navbar {
+        padding: 1.6em;
+    }
+
+    #navlist {
+        flex-direction: column;
+        display: none;
+    }
+
+}
