@@ -1,1 +1,114 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #faebd7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #eee;
+}
+
+/* Main Content */
+h1 {
+    text-align: center;    
+}
+
+/* Add Products to Cart */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {    
+    width: 300px;    
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}  
+
+h2 {
+    padding: 20px 0;
+}
+
+.price {
+    padding-bottom: 10px;
+}
+
+img {
+    width: 240px;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 2px;
+    text-transform: uppercase;
+}
+
+/* Browse other Products */
+.browse {
+    padding-top: 20px;
+    margin-top: 40px;
+     
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;     
+    background-color: #ffe4c4;   
+}
+
+h3 {
+    padding-bottom: 10px;
+}
