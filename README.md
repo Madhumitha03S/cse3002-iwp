@@ -36,6 +36,9 @@ https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab07/lab-07.html
 <br/><br/>
 -> LAB 11: AJAX AND JQUERY <br/>
 https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab11/lab-11a.html
+<br/>
+https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab11/lab-11b.html
+<br/><br/>
 <br/><br/>
 ---> DIGITAL ASSIGNMENT 01: CREATE A WEBSITE FOR OUR UNIVERSITY <--
 <br/>
