@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JQUERY</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Create three buttons with labels red, green, blue, when the mouse is moved over it the background color has to be changed respectively -->
+      <h2>PART 1: CHANGE THE BACKGROUND COLOUR OF THE PAGE</h2>
+      <section class="three-buttons">
+        <button>Red</button>
+        <button>Green</button>
+        <button>Blue</button>
+      </section>
+      <hr />
+      <!-- Create a HTML page holding a list of items and an [Extract Text] button is given. Implement  the  extractText  function  which  will  be  called  when  the  button's onClick event is fired -->
+      <h2>PART 2: EXTRACT TEXT FROM A LISTED TOPIC</h2>
+      <section class="extract-text">
+        <ul>
+          <li>
+            Item 1 <button onclick="extractText(this)">Extract Text</button>
+          </li>
+          <br />
+          <li>
+            Item 2 <button onclick="extractText(this)">Extract Text</button>
+          </li>
+          <br />
+          <li>
+            Item 3 <button onclick="extractText(this)">Extract Text</button>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <!-- Create  a  HTML  page  holding  a  list  of  towns,  a  search  box  and  a [Search]  button. Implement the search function to bold the items from the list which include the text from the search box -->
+      <h2>PART 3: SEARCH FOR A CITY FROM THE LIST BELOW</h2>
+      <section class="search"></section>
+      <label for="search-box">Search:</label>
+      <input type="text" id="search-box" />
+      <button id="search-btn">Search</button>
+      <ul>
+        <li>Bengaluru</li>
+        <li>Chennai</li>
+        <li>Hyderabad</li>
+        <li>Kochi</li>
+        <li>Kolkata</li>
+        <li>Kollam</li>
+        <li>Mumbai</li>
+        <li>Patna</li>
+        <li>Ranchi</li>
+        <li>Surat</li>
+      </ul>
+    </main>
+    <script>
+      // part 1 - function for the three buttons to change background color
+      $(document).ready(function () {
+        $("button").mouseover(function () {
+          var colorName = $(this).text();
+          var colorCode;
+          switch (colorName) {
+            case "Red":
+              colorCode = "red";
+              break;
+            case "Green":
+              colorCode = "green";
+              break;
+            case "Blue":
+              colorCode = "blue";
+              break;
+          }
+          $("body").css("background-color", colorCode);
+        });
+      });
+
+      // part 2 - function for extract text buttons
+      function extractText(item) {
+        var text = $(item).text().trim();
+        alert("Extracted text: " + text);
+      }
+
+      // part 3 - function to search for the text and bold the matching items
+      $(document).ready(function () {
+        $("#search-btn").click(function () {
+          var searchTerm = $("#search-box").val().trim().toLowerCase();
+          if (searchTerm === "") {
+            $("li").css("font-weight", "normal");
+          } else {
+            $("li").each(function () {
+              var townName = $(this).text().trim().toLowerCase();
+              if (townName.includes(searchTerm)) {
+                $(this).css("font-weight", "bold");
+              } else {
+                $(this).css("font-weight", "normal");
+              }
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
