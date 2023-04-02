@@ -28,12 +28,14 @@ https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab06/lab-06.html
 -> LAB 07: HTML DOM AND JAVASCRIPT <br/>
 https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab07/lab-07.html
 <br/><br/>
--> LAB 08: PHP Basics
+-> LAB 08: PHP BASICS
 <br/><br/>
--> LAB 09: PHP - MySQL
+-> LAB 09: PHP - MYSQL
 <br/><br/>
--> LAB 10: PHP Sessions and Cookies
+-> LAB 10: PHP SESSIONS AND COOKIES
 <br/><br/>
+-> LAB 11: AJAX AND JQUERY <br/>
+https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-lab11/lab-11a.html
 <br/><br/>
 ---> DIGITAL ASSIGNMENT 01: CREATE A WEBSITE FOR OUR UNIVERSITY <--
 <br/>
