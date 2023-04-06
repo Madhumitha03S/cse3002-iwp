@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <xsl:template match="/">
+        <html>
+            <head>
+                <title>Employee Information System</title>
+            </head>
+            <body>
+                <h2>Employees with Salary > Rs. 100000 p/m:</h2>
+                <table border="1">
+                    <tr>
+                        <th>Emp. No.</th>
+                        <th>Name</th>
+                    </tr>
+                    <xsl:for-each select="//employee[salary > 100000]">
+                        <tr>
+                            <td><xsl:value-of select="empno"/></td>
+                            <td><xsl:value-of select="name"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>
