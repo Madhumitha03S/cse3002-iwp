@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thesaurus>
+  <word id="w1" text="happy" lang="en" pos="adjective">
+    <synonym id="s1" wordid="w1" text="joyful" lang="en" />
+    <synonym id="s2" wordid="w1" text="pleased" lang="en" />
+    <synonym id="s3" wordid="w1" text="delighted" lang="en" />
+    <antonym id="a1" wordid="w1" text="unhappy" lang="en" />
+    <antonym id="a2" wordid="w1" text="sad" lang="en" />
+  </word>
+  <word id="w2" text="beautiful" lang="en" pos="adjective">
+    <synonym id="s4" wordid="w2" text="gorgeous" lang="en" />
+    <synonym id="s5" wordid="w2" text="stunning" lang="en" />
+    <synonym id="s6" wordid="w2" text="attractive" lang="en" />
+    <antonym id="a3" wordid="w2" text="ugly" lang="en" />
+    <antonym id="a4" wordid="w2" text="unattractive" lang="en" />
+  </word>
+  <word id="w3" text="fast" lang="en" pos="adjective">
+    <synonym id="s7" wordid="w3" text="quick" lang="en" />
+    <synonym id="s8" wordid="w3" text="rapid" lang="en" />
+    <synonym id="s9" wordid="w3" text="swift" lang="en" />
+    <antonym id="a5" wordid="w3" text="slow" lang="en" />
+    <antonym id="a6" wordid="w3" text="leisurely" lang="en" />
+  </word>
+</thesaurus>
