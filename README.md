@@ -49,3 +49,6 @@ https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-da1/home.html
 ---> DIGITAL ASSIGNMENT 02: CREATE A WEBSITE USING HTML, CSS, JS AND PHP <--
 <br/>
 https://madhumitha03s.github.io/cse3002-iwp/20bps1016-cse3002-da2/home.html
+<br/><br/>
+---> DIGITAL ASSIGNMENT 03: PERFROM THE GIVEN USING HTML/ PHP <--
+<br/>
