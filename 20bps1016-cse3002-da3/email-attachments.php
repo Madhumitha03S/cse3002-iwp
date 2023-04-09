@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
     move_uploaded_file($video_resume_tmp_name, $video_resume_path);
 
     // Send email with attachments
-    $to = "recipient@example.com";
+    $to = "madhumitha.s2020b@vitstudent.ac.in";
     $subject = "Fall 22-23 results";
     $message = "Please find my Fall 22-23 results attached.";
     $headers = "From: sender@example.com\r\n";
@@ -64,10 +64,10 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<form action="upload.php" method="POST" enctype="multipart/form-data">
+<form action="email-attachments.php" method="POST" enctype="multipart/form-data">
     <label for="resume">Resume (PDF file):</label>
-    <input type="file" id="resume" name="resume"><br>
+    <input type="file" id="resume" name="resume"><br><br>
     <label for="video_resume">Video Resume (MP4 file):</label>
-    <input type="file" id="video_resume" name="video_resume"><br>
+    <input type="file" id="video_resume" name="video_resume"><br><br>
     <input type="submit" value="Upload Files">
 </form>
