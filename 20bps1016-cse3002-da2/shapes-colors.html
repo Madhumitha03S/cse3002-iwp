@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Title -->
+    <title>Manabi</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/demo-pages.css" />
+    <!-- Javascript -->
+    <script src="js/home.js"></script>
+    <script src="js/demo-pages.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+          <a id="navbar-brand" href="home.html">YOUNG MASTERS</a>
+          <span id="toggle-nav" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+          </span>
+
+          <ul id="navlist">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Container Class-->
+      <div class="container">
+        <!-- SHAPES -->
+        <div class="demo-content">
+          <div id="demo-topics">
+            <ul>
+              <li>
+                <h2><a href="#">SHAPES AND COLOURS</a></h2>
+              </li>
+              <li>
+                <h2><a href="continents.html">CONTINENTS OF THE WORLD</a></h2>
+              </li>
+              <li>
+                <h2>
+                  <a href="english-alphabet.html">THE ENGLISH ALPHABET</a>
+                </h2>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <div id="square-rect"></div>
+            <svg width="100" height="100">
+              <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="green"
+                stroke-width="4"
+                fill="yellow"
+              />
+              Sorry, your browser does not support inline SVG.
+            </svg>
+            <canvas id="myCanvas1" width="200" height="100">
+              Your browser does not support the HTML canvas tag.
+            </canvas>
+            <svg width="300" height="200">
+              <polygon
+                points="100,10 40,198 190,78 10,78 160,198"
+                style="
+                  fill: lime;
+                  stroke: purple;
+                  stroke-width: 5;
+                  fill-rule: evenodd;
+                "
+              />
+              Sorry, your browser does not support inline SVG.
+            </svg>
+
+            <canvas id="myCanvas2" width="200" height="100">
+              Your browser does not support the HTML canvas tag.
+            </canvas>
+
+            <marquee
+              behavior="alternate"
+              direction="left"
+              style="font-size: 3em"
+              >&spades;
+            </marquee>
+            <marquee
+              behavior="alternate"
+              direction="right"
+              style="font-size: 3em"
+              >&clubs;
+            </marquee>
+            <marquee
+              behavior="alternate"
+              direction="left"
+              style="font-size: 3em"
+            >
+              &hearts;
+            </marquee>
+            <marquee
+              behavior="alternate"
+              direction="right"
+              style="font-size: 3em"
+              >&diams;
+            </marquee>
+
+            <video src="https://youtu.be/hq3yfQnllfQ"></video>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+      <div class="footer-content">
+        <div class="map-phone">
+          <div class="address">
+            <p>
+              Vellore Institute of Technology, <br />
+              Vandalur &#8211; Kelambakkam Road,<br />
+              Chennai, Tamil Nadu &#8211; 600 127.
+            </p>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.040704935959!2d80.15123961413394!3d12.840646221214108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259af8e491f67%3A0x944b42131b757d2d!2sVellore%20Institute%20of%20Technology%20-%20VIT%20Chennai!5e0!3m2!1sen!2sin!4v1676207815978!5m2!1sen!2sin"
+              target="_blank"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div id="email-phone">
+            <p>For more queries, contact:</p>
+            <ul>
+              <li>
+                <img src="images/contact/mail.png" id="mail-phone-img" />
+                <a href="mailto:admin.chennai@vit.ac.in"
+                  >admin.chennai@vit.ac.in</a
+                >
+              </li>
+              <li>
+                <img src="images/contact/phone-call.png" id="mail-phone-img" />
+                <a href="tel: +91 44 3993 1555"> +91 44 3993 1555</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" id="top">JUMP TO TOP</a>
+        <br /><br />
+        Copyright &copy; Madhumitha S 20BPS1016
+      </div>
+    </footer>
+  </body>
+</html>
